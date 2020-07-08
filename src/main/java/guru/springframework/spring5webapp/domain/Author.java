@@ -25,8 +25,19 @@ public class Author {
         //this.books = books;
     }
 
+    public Author() {
+    }
+
     public String getFirstName() {
         return firstName;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setFirstName(String firstName) {
@@ -55,8 +66,8 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
-                '}';
+//                ", books=" + books +
+             '}';
     }
 
     @Override
